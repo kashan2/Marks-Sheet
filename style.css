@@ -1,0 +1,16 @@
+.table{
+    text-align: center;
+    border: 10px solid green;
+    box-shadow: 10px 10px 10px white;
+}
+
+.body{
+    background-color: black;
+}
+td{
+    color: white;
+}
+h1{
+    color: green;
+    text-shadow: 5px 5px  white;
+}

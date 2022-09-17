@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="1.png">
+    <title>mark sheet</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        Name = prompt('Enter your Name', '')
+
+        Mathematics = prompt('Enter your mathematics marks', '');
+
+        Chemistry = prompt('Enter your Chemistry marks', '');
+
+        Physics = prompt('Enter your physics marks', '');
+
+        Computer = prompt('Enter your computer marks', '');
+
+        English = prompt('Enter your english marks', '');
+
+        Total = 500;
+
+        Ob = eval(Mathematics) + eval(Chemistry) + eval(Physics) + eval(Computer) + eval(English);
+
+        Percentage = Ob * 100 / Total+'%';
+
+        if (Percentage>= 40) {
+            Result = "Pass";
+
+        }
+        else {
+            Result = "Fail";
+        }
+
+        if (Percentage>=80) {
+            Grade = "A1";
+        }
+
+        else if (Percentage>= 70) {
+            Grade = "A";
+        }
+
+        else if (Percentage >= 60) {
+            Grade = "B";
+        }
+
+        else if (Percentage>= 50) {
+            Grade = "c";
+        }
+
+        else {
+            Grade = "D";
+        }
+
+        
+    </script>
+    <style>
+        .table {
+            text-align: center;
+            border: 10px solid green;
+            box-shadow: 5px 5px 3px 3px white;
+        }
+
+        .body {
+            background-color: black;
+        }
+
+        td {
+            color: white;
+        }
+
+        h1 {
+            color: green;
+            text-shadow: 2px 2px white;
+        }
+    </style>
+
+</head>
+
+
+<body class="body">
+
+    <center>
+
+        <h1>MARK SHEET OF HTML,CSS & JS</h1>
+        <table class="table" border="10px">
+
+            <tr>
+                <td>Name</td>
+                <td>
+                    <script>document.write(Name);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mathematics</td>
+                <td>
+                    <script>document.write(Mathematics);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Chemistry</td>
+                <td>
+                    <script>document.write(Chemistry);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Physics</td>
+                <td>
+                    <script>document.write(Physics);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Computer</td>
+                <td>
+                    <script>document.write(Computer);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td>
+                    <script>document.write(English);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Total Marks</td>
+                <td>
+                    <script>document.write(Total);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Obtained Marks</td>
+                <td>
+                    <script>document.write(Ob);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Percentage</td>
+                <td>
+                    <script>document.write(Percentage);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pass/Fail</td>
+                <td>
+                    <script>document.write(Result);</script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Grade</td>
+                <td>
+                    <script>document.write(Grade)</script>
+                </td>
+            </tr>
+
+
+        </table>
+    </center>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
